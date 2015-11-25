@@ -1,9 +1,9 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-role :app, %w{capistrano}
-role :web, %w{capistrano}
-role :db, %w{capistrano} # .ssh/config に capistrano の設定を書いておく
+role :app, %w{localhost}
+role :web, %w{localhost}
+role :db, %w{localhost} # .ssh/config に localhost の設定を書いておく
 
 set :application, 'hotdog'
 set :repo_url, 'git@github.com:hystking/hotdog' # .ssh/config に github.com の設定を書いておく
